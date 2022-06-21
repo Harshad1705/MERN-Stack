@@ -52,5 +52,18 @@ console.log("Add : " + func(10,10));
 function f1(s){console.log(s)};   // arrow function
 f1(3)
 
-a.forEach(f2);
 function f2(data){console.log(data)}
+a.forEach(f2);
+
+
+// module
+var m = require("./m1")
+console.log(p)
+
+function abc(){          // var defined keyword used only inside that scope
+    p++;
+}
+abc();
+console.log(p);
+
+m.abc()
