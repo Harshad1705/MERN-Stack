@@ -1,5 +1,4 @@
 
-
 var express = require("express")
 var app = express()
 
@@ -11,5 +10,8 @@ app.get("/",(req,res)=>{
 
 app.get("/xyz" , (req,res)=>{
     a = req.query.name;
-    res.send("Hello " + a);
-})
+    b = req.query.text;
+    c = req.query.city;
+    d = req.query.acro;
+    res.send("Hello " + a + " " + b + " " + c + " " + d);
+});
