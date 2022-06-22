@@ -11,6 +11,10 @@ var app = express()
 
 app.listen(3000)
 
-app.get("/" , (req,res)=>{
-    res.send("Hello World");
+app.get('/' , (req,res)=>{
+    res.send("Hello World")
 });
+
+// To run :
+// In terminal - node app
+// In chrome - http://localhost:3000
