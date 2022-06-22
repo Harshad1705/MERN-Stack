@@ -20,3 +20,7 @@ app.get("/login",(req,res)=>{
 app.get("/gallery",(req,res)=>{
     res.sendFile(__dirname + "/gallery.html")
 });
+
+app.get("/checkLogin" , (req,res)=>{
+    res.send(req.query);
+})
