@@ -1,15 +1,15 @@
-// creating javascript object 
+// // creating javascript object 
 
-var obj = { code:0827 , name:"Acro" }
+// // var obj = { code:0827 , name:"Acro" }
 
-x = obj.name
-console.log(x)
+// x = obj.name
+// console.log(x)
 
-obj.name = "Acropolis"
-x = obj.name
-console.log(x)
+// obj.name = "Acropolis"
+// x = obj.name
+// console.log(x)
 
-// creating function inside object
+// // creating function inside object
 
 function xyz(){
     console.log("function xyz is called..")
@@ -26,7 +26,12 @@ var obj_2 = {
     getFunc_4:function(){                                         // anonymous function
         console.log("function xyz is called by " + this.code)
     },
-    setName:(name)=>{this.name = name;}
+    setName:(name)=>{this.name = name;},
+    getname:()=>{return this.name},
+
+    // property
+    get Name(){ return this.name},
+    set Name(name) {this.name = name},
 }
 
 obj_2.getFunc()
@@ -37,4 +42,10 @@ obj_2.getFunc_4()
 console.log(obj_2.name)
 obj_2.setName("harry");
 console.log(obj_2.name)
-console.log(obj_2.name)
+console.log(obj_2.getname())
+
+console.log(obj_2.Name)
+obj_2.Name = "potter"
+console.log(obj_2.Name)
+
+
