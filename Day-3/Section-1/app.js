@@ -37,3 +37,4 @@ obj_2.getFunc_4()
 console.log(obj_2.name)
 obj_2.setName("harry");
 console.log(obj_2.name)
+console.log(obj_2.name)
