@@ -1,8 +1,10 @@
-
 var express = require("express")
-var router = express.Router()
+var app = express()
 
-router.get("/",(req,res)=>{
-    res.send("Home")
-})
-module.exports = router;
+app.listen(3000)
+
+var homeRouter = require("./routes/homeRouter");
+var loginRouter = require("./routes/loginRouter");
+
+app.use('/',homeRouter);
+app.use('/login',loginRouter)
