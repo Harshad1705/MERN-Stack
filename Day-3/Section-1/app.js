@@ -1,15 +1,15 @@
-// // creating javascript object 
+// creating javascript object 
 
-// // var obj = { code:0827 , name:"Acro" }
+var obj = { code:0827 , name:"Acro" }
 
-// x = obj.name
-// console.log(x)
+x = obj.name
+console.log(x)
 
-// obj.name = "Acropolis"
-// x = obj.name
-// console.log(x)
+obj.name = "Acropolis"
+x = obj.name
+console.log(x)
 
-// // creating function inside object
+// creating function inside object
 
 function xyz(){
     console.log("function xyz is called..")
