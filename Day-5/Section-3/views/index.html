@@ -13,8 +13,13 @@
             s1.innerHTML="*";
             f= false;
         }
-        if(a.match(/ /) || a.match(/[0-9]/)){    
+        if(a.match(/ /) ){    
             s1.innerHTML="*";
+            f = false;
+        }
+
+        if(!(a.match(/[a-z]/) && a.match(/[A-Z]/) && a.match(/[0-9]/) && a.match(/\W/))){
+            s1.innerHTML = "*";
             f = false;
         }
 
