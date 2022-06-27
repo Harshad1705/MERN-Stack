@@ -1,6 +1,7 @@
 
 <form name="f1" action="search" onsubmit="return xyz()">
     <input name="t1"><span id="s1" style="color:red"></span>
+    <input name="t2"><span id="s2" style="color:red"></span>
     <input type="submit" value="Search">
 </form>
 <script>
@@ -8,6 +9,7 @@
 
         var f = true;
         a=document.f1.t1.value;
+        b=document.f1.t2.value;
 
         if(a.length==0){    
             s1.innerHTML="*";
@@ -20,6 +22,11 @@
 
         if(!(a.match(/[a-z]/) && a.match(/[A-Z]/) && a.match(/[0-9]/) && a.match(/\W/))){
             s1.innerHTML = "*";
+            f = false;
+        }
+
+        if(!b.match(/^0827[a-z]{2}[0-9]{6}/)){
+            alert("Enrollmnt not proper");
             f = false;
         }
 
