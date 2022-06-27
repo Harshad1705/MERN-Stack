@@ -1,18 +1,23 @@
 
 <form name="f1" action="search" onsubmit="return xyz()">
     <input name="t1"><span id="s1" style="color:red"></span>
-    <input type="submit">
+    <input type="submit" value="Search">
 </form>
 <script>
     function xyz(){
 
+        var f = true;
         a=document.f1.t1.value;
 
         if(a.length==0){    
             s1.innerHTML="*";
-            return false;
-        }else{
-            return true;
+            f= false;
         }
+        if(a.match(/ /) || a.match(/[0-9]/)){    
+            s1.innerHTML="*";
+            f = false;
+        }
+
+        return f;
     }
 </script>
