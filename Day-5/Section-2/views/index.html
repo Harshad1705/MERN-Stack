@@ -1,10 +1,19 @@
-<form action="search">
-    <input name="t1" required pattern="\d{6}" > <br> <br>                                                                                                                                         
-    <input name="t2" required pattern="[0-9]{3,6}" ><br> <br>                                                                                                                                                   
-    <input name="t3" required pattern="[a-z]{3,6}" > <br><br>
-    <input name="t4" required pattern="[a-zA-Z]{3,6}" > <br><br>
-    <input name="t5" required pattern="cs-?[0-9]{0,2}" > <br><br>
-    <input name="t5" required pattern="cs-?[0-9]{0,2}+" > <br><br>
-    <input name="t5" required pattern="cs-?[0-9]{0,2}*" > <br><br>
+
+
+<form action="search" >
+    <input name="t1" required pattern="\d{6}" > <br> <br>                    // enter value of length 6     <br><br>                                                                                                                        
+    <input name="t2" required pattern="[0-9]{3,6}" ><br> <br>                //  include digit between 0 to 9 of length 3 and both included             <br><br>                                                                                                                    
+    <input name="t3" required pattern="[a-z]{3,6}" > <br><br>                // only small alphabet of length between 3 and 6 both included <br><br>
+    <input name="t4" required pattern="[a-zA-Z]{3,6}" > <br>                 // small + big alphabet of length between 3 and 6, 3 & 6 both included       <br><br>
+    <input name="t5" required pattern="cs-?[0-9]{0,2}" > <br>                // ?  0 or 1 <br><br>
+    <input name="t5" required pattern="cs-?[0-9]{0,2}+" > <br>               // +  0 or many <br><br>
+    <input name="t5" required pattern="cs-?[0-9]{0,2}*" > <br>               // *  1 or many  <br><br>
+    <input name="t5" required pattern="abc*" > <br>                          // c*  1 c or many c  <br><br>
+    <input name="t5" required pattern="\d{4}[A-Z]{2}[0-9]{6}" > <br>         // create enrollment number  <br><br> -->
+    <input name="t5" required pattern="\d+" > <br>                           // only digit allowed <br><br>
+    <input name="t5" required pattern="\D+" > <br>                           // special digit allowed <br><br>
+    <input name="t5" required pattern="\w+" > <br>                           // alpha numeric value allowed <br><br>
+    <input name="t5" required pattern="\W+" > <br>                           // rest than alpha numeric <br><br>
+    <input name="t6" required pattern="\w+[@]\w+[.]\w+([.]\w+)?" > <br>      // enter mail <br><br>
     <input type="submit">
 </form>
