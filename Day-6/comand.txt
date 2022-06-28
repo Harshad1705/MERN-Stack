@@ -15,5 +15,9 @@ db.student.insert({name:101,name:"harry"});      // to insert value      student
 
 db.student.find().prety();                       // used to view the record of student(table)
 
+db.student.remove();                            // delete all record
+
+db.student.remove({name:101});                  // delete record of name 101
+
 
 
