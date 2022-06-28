@@ -7,10 +7,6 @@
 
 
 
-
-
-
-
 // Mongo Commands\
 
 // In bin folder , write CMD on its path , then in CMD 
@@ -32,3 +28,12 @@ db.student.remove();                            // delete all record
 db.student.remove({name:101});                  // delete record of name 101
 
 db.student.update( {name:102} , {$set:{name:"one-zero-two"}});   // to update record
+
+
+// to disconnect server
+
+use admin
+
+db.shutdowmServer();
+
+exit();
