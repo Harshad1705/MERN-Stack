@@ -29,6 +29,18 @@ db.student.remove({name:101});                  // delete record of name 101
 
 db.student.update( {name:102} , {$set:{name:"one-zero-two"}});   // to update record
 
+db.student.find({"name":"xyz"}).pretty();      // show record whose name=xyz
+
+db.student.find({"likes":{$lt:50}}).pretty();  // show record where likes are less than 50
+
+db.student.find({"likes":{$lte:50}}).pretty();  // show record where likes are less than and equal to 50
+
+db.student.find({"likes":{$gt:50}}).pretty();  // show record where likes are greater than 50
+
+db.student.find({"likes":{$gte:50}}).pretty();  // show record where likes are greater than and equal to 50
+
+db.student.find({"likes":{$ne:50}}).pretty();  // show record where likes are not equal to 50
+
 
 // to disconnect server
 
