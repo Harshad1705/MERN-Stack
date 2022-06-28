@@ -1,3 +1,16 @@
+// download mongo DB
+
+// in bin folder there is a file of mongoDB
+// create a data folder(empty folder) with bin folder path
+
+
+
+
+
+
+
+
+
 // Mongo Commands\
 
 // In bin folder , write CMD on its path , then in CMD 
