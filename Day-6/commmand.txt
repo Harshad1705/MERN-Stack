@@ -1,0 +1,7 @@
+
+// Mongo Commands
+
+mongod --dbpath=..\data       // for open server
+
+mongo                         // for open client
+
