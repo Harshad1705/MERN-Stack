@@ -1,1 +1,21 @@
-//
+// Mongo Commands\
+
+// In bin folder , write CMD on its path , then in CMD 
+
+mongod --dbpath=..\data                          // for open server
+
+// In another CMD terminl
+
+mongo                                            // for open client
+
+use mydb                                         // to create database 
+
+db.student.insert({name:101,name:"harry"});      // to insert value      student(table)
+
+db.student.find().prety();                       // used to view the record of student(table)
+
+db.student.remove();                            // delete all record
+
+db.student.remove({name:101});                  // delete record of name 101
+
+db.student.update( {name:102} , {$set:{name:"one-zero-two"}});   // to update record
