@@ -19,5 +19,7 @@ db.student.remove();                            // delete all record
 
 db.student.remove({name:101});                  // delete record of name 101
 
+db.student.update( {name:102} , {$set:{name:"one-zero-two"}});   // to update record
+
 
 
