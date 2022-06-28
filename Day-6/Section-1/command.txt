@@ -41,6 +41,10 @@ db.student.find({"likes":{$gte:50}}).pretty();  // show record where likes are g
 
 db.student.find({"likes":{$ne:50}}).pretty();  // show record where likes are not equal to 50
 
+db.student.find({},{marks:0,id:0}).pretty();   // marks and id colum will not shown
+
+_ used to create variable primary
+db.student.find({},{marks:0,_id:0}).pretty();
 
 // to disconnect server
 
