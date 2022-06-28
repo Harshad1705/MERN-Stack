@@ -1,7 +1,11 @@
 
-// Mongo Commands
+// Mongo Commands\
+
+// In bin folder , write CMD on its path , then in CMD 
 
 mongod --dbpath=..\data       // for open server
+
+// In another CMD terminl
 
 mongo                         // for open client
 
