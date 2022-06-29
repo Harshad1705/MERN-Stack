@@ -25,3 +25,12 @@ app.get("/",(req,res)=>{
         });
     });
 });
+
+// download the mongodb
+
+// to run this file
+
+// first connect server
+// then start client
+// run the code
+// check the entry in database
