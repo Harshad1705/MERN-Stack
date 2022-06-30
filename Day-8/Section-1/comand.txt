@@ -1,0 +1,12 @@
+
+// skeleton  -- automatic create all folder require for project
+
+create a empty folder
+then open cmd at that location
+
+> npm i express
+> npm i express-generator -g
+> express myProject      :myProject(project name)
+> cd myProject
+> npm install
+> npm start
